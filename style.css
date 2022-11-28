@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+   
+}
+header{
+    background-color: rgb(251,210,14);
+    text-align: center;
+    height: 44px;
+}
+/* ------------------Navigation-------------- */
+
+nav{
+    background-color: black;
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li, a{
+    color: white;
+    font-size: 12px;
+}
+/* Thẻ li thứ 2 */
+nav ul li:nth-child(2) a{
+    color: yellow;
+
+}
+nav ul li:nth-child(2) i{
+    color: yellow;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3){
+    position: relative;
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li:nth-child(3) i{
+    position:absolute;
+    font-size: 20px;
+    right: 12px;
+    line-height: 30px;
+    color: black;
+    cursor: pointer;
+}
+nav ul li:nth-child(4) button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(163, 160, 160);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+nav ul li:nth-child(4) button i{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover{
+    background-color: rgb(156, 156, 156);
+}
+nav ul li:nth-child(5){
+    text-align: center;
+}
+nav ul li:nth-child(5) a:hover{
+    color: yellow;
+    text-align: center;
+}
+nav ul li:nth-child(7) a:hover{
+    color: yellow;
+}
+nav ul li:nth-child(8) a:hover{
+    color: yellow;
+}
+nav ul li:nth-child(9) a:hover{
+    color: yellow;
+}
+/* --------------------Menu-bar------------- */
+.menu-bar{
+    background-color: yellow;
+    
+}
+.menu-bar ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul li{
+    padding: 12px 6px;
+    transition: all 0.3s ease;
+}
+.menu-bar ul li:hover{
+    background-color: rgb(247, 247, 255);
+}
+.menu-bar ul li a{
+    color: #333;
+    font-size: 13px;
+}
+.menu-bar ul li a i{
+    margin-right: 6px;
+    font-size: 16px;
+}
+.subnav{
+    float: left;
+    overflow: hidden;
+}
+.subnav-content{
+    display: none;
+    position: relative;
+    background-color: rgb(30, 30, 54);  
+    width: 80%;
+    color: #333;
+}
+.subnav:hover .subnav-content{
+    display: block;
+    position:absolute;
+}
+.item-child{
+    position: absolute;
+    background-color: #333;
+    height: 100%;
+    width: 30%;
+   
+}
+/* -----adressform */
+#adressform{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0,0.6);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    z-index: 999;
+}
+.adressform-content{
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+.adressform-content form{
+    padding: 12px 40px;
+
+}
+.adressform-content h2{
+    font-size: 14px;
+    color: #333;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.adressform-content h2 span{
+    position: absolute;
+    height: 30px;
+    display: block;
+    padding: 0 6px;
+    border: 1px solid #ddd ;
+    cursor: pointer;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    border-radius: 5px;
+
+}
+.adressform-content form p{
+    font-size: 16px;
+}
+.adressform-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    background-color: #f97e0f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+}
+.adressform-content form input ,select{
+    height: 40px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+nav ul li:nth-child(3):hover{
+    display: block;
+}
